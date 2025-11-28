@@ -20,15 +20,10 @@ Execute the C Program for the desired output.
 
 # PROGRAM:
 
-Developed by : NARESH.V
+Writer.c
 
-Register Number : 212222110027
-
-## C program that receives a message from message queue and display them
-
-writer.c
-~~~
 // C Program for Message Queue (Writer Process) 
+```
 #include <stdio.h> 
 #include <sys/ipc.h> 
 #include <sys/msg.h> 
@@ -55,11 +50,12 @@ int main()
 	printf("Data send is : %s \n", message.mesg_text); 
 	return 0; 
 }
-~~~
+```
 
-reader.c
-~~~
+Reader.c
+
 // C Program for Message Queue (Reader Process)
+```
 #include <stdio.h>
 #include <sys/ipc.h>
 #include <sys/msg.h>
@@ -88,11 +84,17 @@ int main()
 	msgctl(msgid, IPC_RMID, NULL);
 	return 0;
 }
-~~~
+```
+
 
 ## OUTPUT
 
-![322689185-a0a860cf-105e-41c7-9dad-00baaa58ff9c](https://github.com/04Varsha/Linux-IPC-Message-Queues/assets/149035374/92240eb9-ab6b-49fc-a962-e229e4d045ff)
+<img width="638" height="557" alt="4 1" src="https://github.com/user-attachments/assets/8d27b62f-a53b-4089-bac1-de9cb3e9b6cd" />
+
+
+<img width="843" height="566" alt="4b" src="https://github.com/user-attachments/assets/f2a2679a-e117-4cb5-9b8e-de7bb82d5d61" />
+
+
 
 
 
